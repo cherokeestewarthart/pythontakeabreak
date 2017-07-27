@@ -6,7 +6,7 @@ class CherokeeHandler(BaseHTTPRequestHandler):
         print(self.path)
         self.send_response(200, "OK")
         self.end_headers()
-        self.wfile.write("FUCK YOU")
+        self.wfile.write("HELLO")
 
 if sys.argv[1:]:
     port = int(sys.argv[1])
